@@ -12,14 +12,14 @@ var tyrannosaurus = {
   weight: 7000 + 'kg',
   length: 12 + 'm',
   period: 'Late Cretaceous',
-  roar = function() {
+  roar : function() {
     return "RAWERSRARARWERSARARARRRR!";
   }
 }
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
-var stegasaurus = {
-  diet: herbivorous,
+var stegosaurus = {
+  diet: 'herbivorous',
   weight: 2000 + 'kg',
   length: 9 + 'm',
   period: 'Late Jurassic'
@@ -145,8 +145,7 @@ console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
 
-The zoos need to know their total animal population across the United States. Find the total population 
-from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
+The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
 let populationTotal = 0;

@@ -40,7 +40,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
-// Explanation: the inner function nestedFunction can access the variable internal because of its closure on the outer function. Being an inner function of myFunction, the variable internal has become private to any inner function within myfunction because of their lexical scope.
+// Explanation: the inner function nestedFunction can access the variable internal because of its closure on the outer function. The variable internal is within the lexical scope of nestedFunction, which is why it can be accessed. Being an inner function of myFunction, the variable internal has become private to any inner function within myfunction because of their lexical scope, incuding nestedFunction.
 
 
 const external = "I'm outside the function";
